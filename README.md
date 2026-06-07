@@ -1,25 +1,10 @@
 # LeetPro Landing Page
 
-Minimal standalone Next.js landing page that shows only the top 3 teams leaderboard.
+현재 프로젝트에서 lading page 관련 코드만 분리
 
-## Included
+* database는 supabase를 사용하고 있으므로 로컬에서 테스트하기 위해서는 개인 database를 만들고 연결시켜야 연동 가능
 
-- Landing UI for top teams
-- `GET /api/landing/top-teams`
-- Supabase query logic for `team` and `team_members`
-- Minimal SQL schema and seed data in `database/landing_top_teams_seed.sql`
 
-## Environment
-
-Copy `.env.example` to `.env.local` and fill in the values:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY=your-publishable-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-```
-
-`SUPABASE_SERVICE_ROLE_KEY` is recommended because the public landing API reads leaderboard rows server-side while returning only limited fields to the browser.
 
 ## Run
 
