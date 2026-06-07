@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "SolveSpot Landing",
-  description: "상위 팀 랭킹을 보여주는 LeetPro 랜딩 페이지입니다.",
+  description: "LeetCode 풀이 기록과 팀 랭킹을 보여주는 Solve Spot 랜딩 페이지입니다.",
 };
 
 const headingFont = Space_Grotesk({

@@ -1,21 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 import waypointsImage from "@/images/waypoints.svg";
 
 const PlatformInfo = {
   name: "Solve Spot",
-  logoSrc: waypointsImage.src,
 };
 
 export function PlatformLogo() {
   return (
     <div className="flex flex-row justify-between items-center pl-3 md:pl-10">
       <Link
-        href={"/home"}
+        href="/"
         className="flex items-center gap-2 font-bold whitespace-nowrap"
       >
-        <img
-          src={PlatformInfo.logoSrc}
+        <Image
+          src={waypointsImage}
           alt="logo"
+          width={48}
+          height={48}
           className="object-contain md:w-12 md:h-12"
         />
         <span className="text-base md:text-2xl">{PlatformInfo.name}</span>

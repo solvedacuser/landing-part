@@ -1,8 +1,8 @@
 import { LandingPage } from "@/components/landing-page";
-import { fetchLandingTopTeams } from "@/lib/landing/fetch-top-teams";
+import { loadLandingTopTeams } from "@/lib/landing/top-teams";
 
 export default async function HomePage() {
-  const topTeams = await fetchLandingTopTeams();
+  const { items: topTeams } = await loadLandingTopTeams();
 
   return <LandingPage topTeams={topTeams} />;
 }
