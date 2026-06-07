@@ -3,7 +3,6 @@ import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 import { SiteNav } from "@/components/site-nav";
 import { createClient } from "@/utils/supabase/server";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -49,7 +48,6 @@ export default async function RootLayout({
         />
         {children}
 
-        <Toaster />
         <Footer />
       </body>
     </html>
