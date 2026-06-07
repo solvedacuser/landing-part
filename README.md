@@ -1,4 +1,4 @@
-# LeetPro Landing Page
+# solve spot Landing Page
 
 현재 프로젝트에서 landing page 관련 코드만 분리
 
